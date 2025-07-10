@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PufiGlo - Magazin LED</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
@@ -29,14 +30,20 @@
       <img src="https://i.imgur.com/bxQG8z9.png" alt="Ursuleț LED" />
       <h3>Ursuleț LED 40cm</h3>
       <p>89 lei</p>
-      <button>Adaugă în coș</button>
+      <button onclick="adaugaInCos('Ursuleț LED 40cm', 89)">Adaugă în coș</button>
     </div>
     <div class="produs">
       <img src="https://i.imgur.com/U2SkKxT.png" alt="Iepuraș Glow" />
       <h3>Iepuraș Glow</h3>
       <p>79 lei</p>
-      <button>Adaugă în coș</button>
+      <button onclick="adaugaInCos('Iepuraș Glow', 79)">Adaugă în coș</button>
     </div>
+  </section>
+
+  <section class="cos">
+    <h2>Coș de cumpărături 🛒</h2>
+    <ul id="cosProduse"></ul>
+    <p>Total: <span id="total">0</span> lei</p>
   </section>
 
   <section class="contact" id="contact">
